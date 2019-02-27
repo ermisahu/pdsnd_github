@@ -123,10 +123,10 @@ def trip_duration(df):
     df['Travel Time'] = df['End Time'] - df['Start Time']
     total_trip_time = np.sum(df['Travel Time'])
     total_days = str(total_trip_time).split()[0]
-    print (" \n -The total traveling time for 6 months period: " + total_days + " days \n")
+    print (" \n -The total traveling time for 6 months period: {} days \n".format(total_days))
     avg_trip_time = np.mean(df['Travel Time'])
     avg_days = str(avg_trip_time).split()[0]
-    print(" -The average travel time for 6 months period: " + avg_days + " days \n")
+    print(" -The average travel time for 6 months period: {} days \n".format(avg_days))
     return total_trip_time, avg_trip_time
 
 def pop_stations(df):
