@@ -17,6 +17,7 @@ def get_city():
     #get user input for city (chicago, new york city, washington).
     city = input('Would you like to see data for Chicago, New York, or Washington?')
     city = city.lower()
+
     while True:     # I choose to use while loop to get the correct or expected city by user
             if city == 'chicago':
                 return 'chicago'
@@ -181,8 +182,8 @@ def disp_raw_data(df):
     #excludes irrelevant columns from solution table
     df = df.drop(['month'], axis = 1)
     row_index = 0
-
     see_data = input("\nDo you want to see 5 rows of the data from the statistic? Please write 'yes' or 'no' \n").lower()
+
     while True:
         if see_data == 'no':
             return
@@ -209,10 +210,12 @@ def main():
 
     # Restarting option
     restart = input("\n Would you like to try another analysis? Type \'yes\' or \'no\'.\n")
+
     if restart.upper() == 'YES' or restart.upper() == "Y" or restart.upper() == 'yes':
         print("OK Great! Please begin again :) \n  ")
         main()
     else:
         print("Thank you for your interest! This is the end of statistic.")
+
 if __name__ == '__main__':
     main()
