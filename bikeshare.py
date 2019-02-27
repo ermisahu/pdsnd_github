@@ -208,7 +208,7 @@ def main():
     for x in stats_funcs_list:	# shows processing time for each function block
         process(x, df)
 
-    # Restarting option
+    # Restarting option question will be asked to the user
     restart = input("\n Would you like to try another analysis? Type \'yes\' or \'no\'.\n")
 
     if restart.upper() == 'YES' or restart.upper() == "Y" or restart.upper() == 'yes':
