@@ -11,6 +11,7 @@ In this project, I made use of Python to explore data related to bike share syst
 - chicago.csv
 - new_york_city.csv
 - washington.csv
+- bikeshare.py
 
 ### Credits
 Udacity provided a template with helper code and comments is provided in a bikeshare.py file In addition, Udacity also provided the following three city dataset files:
